@@ -12,19 +12,72 @@ h5 {
 	font-size: 18px;
 }
 
-.container {
-    max-width: 100%;
+.background-container {
+	max-width: 100%;
+	margin: 0;
+
+	.background-img {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+.top-container {
+	background-color: rgb(46, 46, 46);
+	max-width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	opacity: .85;
+
+	.nav-container {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+		margin-right: 60px;
+
+		.nav-link {
+			color: white;
+		}
+
+		.nav-link:hover {
+			color: #FFB343;
+		}
+	}
+}
+
+.transparent-container {
+	height: 100vh;
+	width: 100%;
+}
+
+.main-container {
+    max-width: 1024px;
     margin: 0;
     padding: 0;
     color: white;
     font-weight: lighter;
-    font-size: 14px;
-    text-align: justify;
+	font-size: 14px;
+	text-align: justify;
+	margin: auto;
+	opacity: 0.9;
     
     .left-container {
 		background-color: #FFB343;
-		color: rgb(48, 48, 99);
-        text-shadow: 3px 2px rgb(226, 160, 60);
+		color: rgb(44, 44, 44);
+		text-shadow: 3px 2px rgb(226, 160, 60);
+		
+		.left-flex-container {
+			display: flex;
+			flex-direction: column;
+			// justify-content: space-between;
+
+			.custom-container {
+				// border: 1px solid blue;
+				margin-bottom: 12px;
+			}
+		}
 
         .image-container {
             // border: 1px solid blue;
@@ -42,23 +95,16 @@ h5 {
 		.language-container {
 			// border: 1px solid blue;
 			width: 50%;
-			padding: 20px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center;
+			padding: 10px 20px;
+			// display: flex;
+			// flex-wrap: wrap;
+			// justify-content: space-around;
+			// align-items: center;
 
 			.flag-icon {
 				border-radius: 500px;
 				width: 55px;
 				height: 55px;
-			}
-
-			.flag-icon:hover {
-				width: 70px;
-				height: 70px;
-				box-shadow: 5px 5px 15px black;
-				
 			}
 
 			h5 {
@@ -69,7 +115,6 @@ h5 {
 
 		.social-icons-container {
 			padding: 10px 0;
-			border: 1px solid blue;
 			display: flex;
 			align-items: center;
 
@@ -77,6 +122,13 @@ h5 {
 				width: 40px;
 				height: 40px;
 				border-radius: 500px;
+				cursor: pointer;
+			}
+
+			.social-icon:hover {
+				width: 50px;
+				height: 50px;
+				box-shadow: 5px 5px 15px black;
 			}
 
 			.github-icon {
@@ -99,10 +151,14 @@ h5 {
     }
 }
 
+.main-container:hover {
+	opacity: 1;
+}
+
 .footer-container {
     color: white;
     font-weight: lighter;
-    background-color: #282a2c;
+    background-color: rgb(46, 46, 46);
     padding: 20px 20px 40px;
     margin: 0;
 }
