@@ -8372,24 +8372,90 @@ a.text-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
 .container {
   max-width: 100%;
   margin: 0;
   padding: 0;
   color: white;
   font-weight: lighter;
-  font-size: 13px;
+  font-size: 14px;
+  text-align: justify;
 }
 .container .left-container {
-  background-color: #EE474E;
-  text-shadow: 3px 2px #ac3339;
+  background-color: #FFB343;
+  color: #303063;
+  text-shadow: 3px 2px #e2a03c;
 }
-.container .left-container .custom-container {
+.container .left-container .image-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+.container .left-container .image-container .my-image {
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+}
+.container .left-container .language-container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .left-container .language-container .flag-icon {
+  border-radius: 500px;
+  width: 55px;
+  height: 55px;
+}
+.container .left-container .language-container .flag-icon:hover {
+  width: 70px;
+  height: 70px;
+  box-shadow: 5px 5px 15px black;
+}
+.container .left-container .language-container h5 {
+  margin: 0;
+}
+.container .left-container .social-icons-container {
+  padding: 10px 0;
   border: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
+.container .left-container .social-icons-container .social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px;
+}
+.container .left-container .social-icons-container .github-icon {
+  width: 45px;
+  height: 45px;
 }
 .container .right-container {
   background-color: #374351;
 }
-.container .right-container .custom-container {
-  border: 1px solid blue;
+.container .right-container .name-container {
+  padding: 40px 0;
+}
+.container .right-container .name-container .my-name {
+  font-size: 60px;
+}
+.footer-container {
+  color: white;
+  font-weight: lighter;
+  background-color: #282a2c;
+  padding: 20px 20px 40px;
+  margin: 0;
 }

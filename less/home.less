@@ -1,25 +1,108 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h5 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18px;
+}
+
 .container {
     max-width: 100%;
     margin: 0;
     padding: 0;
     color: white;
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 14px;
+    text-align: justify;
     
     .left-container {
-        background-color: #EE474E;
-        text-shadow: 3px 2px rgb(172, 51, 57);
+		background-color: #FFB343;
+		color: rgb(48, 48, 99);
+        text-shadow: 3px 2px rgb(226, 160, 60);
 
-        .custom-container {
-            border: 1px solid blue
-        }
+        .image-container {
+            // border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+
+            .my-image {
+                border-radius: 500px;
+                width: 200px;
+                height: 200px;
+            }
+		}
+		
+		.language-container {
+			// border: 1px solid blue;
+			width: 50%;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+
+			.flag-icon {
+				border-radius: 500px;
+				width: 55px;
+				height: 55px;
+			}
+
+			.flag-icon:hover {
+				width: 70px;
+				height: 70px;
+				box-shadow: 5px 5px 15px black;
+				
+			}
+
+			h5 {
+				// border: 1px solid blue;
+				margin: 0;
+			}
+		}
+
+		.social-icons-container {
+			padding: 10px 0;
+			border: 1px solid blue;
+			display: flex;
+			align-items: center;
+
+			.social-icon {
+				width: 40px;
+				height: 40px;
+				border-radius: 500px;
+			}
+
+			.github-icon {
+				width: 45px;
+				height: 45px;
+			}
+		}
     }
 
     .right-container {
-        background-color: #374351;
+		background-color: #374351;
 
-        .custom-container {
-            border: 1px solid blue
-        }
+		.name-container {
+			padding: 40px 0;
+
+			.my-name {
+				font-size: 60px;
+			}
+		}
     }
+}
+
+.footer-container {
+    color: white;
+    font-weight: lighter;
+    background-color: #282a2c;
+    padding: 20px 20px 40px;
+    margin: 0;
 }
