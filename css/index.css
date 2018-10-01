@@ -8399,17 +8399,21 @@ h5 {
   max-width: 100%;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   opacity: .85;
 }
 .top-container .nav-container {
+  width: 1024px;
+  padding: 10px 0;
+}
+.top-container .nav-container .nav-main-container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-right: 60px;
+  justify-content: flex-end;
+  margin: 0;
 }
 .top-container .nav-container .nav-link {
   color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .top-container .nav-container .nav-link:hover {
   color: #FFB343;
@@ -8477,7 +8481,7 @@ h5 {
   margin-bottom: 20px;
 }
 .main-container .right-container {
-  background-color: #374351;
+  background-color: #313c49;
 }
 .main-container .right-container .name-container {
   padding: 40px 0;
@@ -8538,7 +8542,7 @@ h5 {
 }
 .footer-container .contact-container .contact-info h4 {
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-container .contact-container .contact-info:hover {
   color: #FFB343;
