@@ -119,6 +119,13 @@ h5 {
 				margin: 0;
 			}
 		}
+
+		.education-container {
+			
+			.about-info {
+				margin-bottom: 20px;
+			}
+		}
     }
 
     .right-container {
@@ -163,36 +170,64 @@ h5 {
 }
 
 .footer-container {
-	width: 100%;
+	max-width: 100%;
 	display: flex;
-	justify-content: space-between;
-	// flex-direction: column;
+	justify-content: center;
     color: white;
     font-weight: lighter;
     background-color: rgb(46, 46, 46);
-	padding: 50px;
-	margin: 100px 0 0;
-	border: 1px solid blue;
-	position: absolute;
+	padding: 50px 0;
+	margin: 100vh 0 0;
 	opacity: .8;
+
+	.footer-main-container {
+		width: 1024px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		.contact-info {
+			display: flex;
+			margin: 0 10px;
+
+			i {
+				font-size: 18px;
+				margin-top: 4px;
+			}
+
+			h4 {
+				margin: 0 10px;
+				font-size: 20px;
+			}
+		}
+
+		.contact-info:hover {
+			color: #FFB343;
+		}
+	}
 
 	h1 {
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
 
 	.social-icons-container {
-		border: 1px solid blue;
-		// width: 300px;
 		padding: 10px 0;
 		display: flex;
 		align-items: center;
 		position: relative;
+		justify-content: flex-end;
 
 		.social-icon {
 			width: 40px;
 			height: 40px;
 			border-radius: 500px;
 			cursor: pointer;
+			margin: 0 10px 0 10px;
 		}
 
 		.social-icon:hover {
