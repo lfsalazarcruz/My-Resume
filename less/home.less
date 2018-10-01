@@ -3,18 +3,20 @@ h1 {
 }
 
 h4 {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h5 {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 18px;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 .background-container {
 	max-width: 100%;
 	margin: 0;
+	position: absolute;
 
 	.background-img {
 		position: fixed;
@@ -50,6 +52,17 @@ h5 {
 .transparent-container {
 	height: 100vh;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	h1 {
+		color: white;
+		text-align: center;
+		font-size: 120px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
 }
 
 .main-container {
@@ -93,13 +106,8 @@ h5 {
 		}
 		
 		.language-container {
-			// border: 1px solid blue;
 			width: 50%;
 			padding: 10px 20px;
-			// display: flex;
-			// flex-wrap: wrap;
-			// justify-content: space-around;
-			// align-items: center;
 
 			.flag-icon {
 				border-radius: 500px;
@@ -108,32 +116,7 @@ h5 {
 			}
 
 			h5 {
-				// border: 1px solid blue;
 				margin: 0;
-			}
-		}
-
-		.social-icons-container {
-			padding: 10px 0;
-			display: flex;
-			align-items: center;
-
-			.social-icon {
-				width: 40px;
-				height: 40px;
-				border-radius: 500px;
-				cursor: pointer;
-			}
-
-			.social-icon:hover {
-				width: 50px;
-				height: 50px;
-				box-shadow: 5px 5px 15px black;
-			}
-
-			.github-icon {
-				width: 45px;
-				height: 45px;
 			}
 		}
     }
@@ -155,10 +138,70 @@ h5 {
 	opacity: 1;
 }
 
+.about-info { // ================ icons edition================
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	i {
+		font-size: 30px;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0 5px;
+	}
+}
+
+.bullet-point { // =============== bullet points edition ===========
+	display: flex;
+	align-items: flex-start;
+
+	i {
+		margin: 5px 5px 0 0;;
+	}
+}
+
 .footer-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	// flex-direction: column;
     color: white;
     font-weight: lighter;
     background-color: rgb(46, 46, 46);
-    padding: 20px 20px 40px;
-    margin: 0;
+	padding: 50px;
+	margin: 100px 0 0;
+	border: 1px solid blue;
+	position: absolute;
+	opacity: .8;
+
+	h1 {
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	.social-icons-container {
+		border: 1px solid blue;
+		// width: 300px;
+		padding: 10px 0;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		.social-icon {
+			width: 40px;
+			height: 40px;
+			border-radius: 500px;
+			cursor: pointer;
+		}
+
+		.social-icon:hover {
+			box-shadow: 5px 5px 15px black;
+		}
+
+		.github-icon {
+			width: 45px;
+			height: 45px;
+		}
+	}
 }

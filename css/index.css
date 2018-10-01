@@ -8376,16 +8376,18 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h4 {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h5 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 .background-container {
   max-width: 100%;
   margin: 0;
+  position: absolute;
 }
 .background-container .background-img {
   position: fixed;
@@ -8415,6 +8417,16 @@ h5 {
 .transparent-container {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.transparent-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 120px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .main-container {
   max-width: 1024px;
@@ -8461,26 +8473,6 @@ h5 {
 .main-container .left-container .language-container h5 {
   margin: 0;
 }
-.main-container .left-container .social-icons-container {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-.main-container .left-container .social-icons-container .social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 500px;
-  cursor: pointer;
-}
-.main-container .left-container .social-icons-container .social-icon:hover {
-  width: 50px;
-  height: 50px;
-  box-shadow: 5px 5px 15px black;
-}
-.main-container .left-container .social-icons-container .github-icon {
-  width: 45px;
-  height: 45px;
-}
 .main-container .right-container {
   background-color: #374351;
 }
@@ -8493,10 +8485,58 @@ h5 {
 .main-container:hover {
   opacity: 1;
 }
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-info i {
+  font-size: 30px;
+}
+.about-info h1 {
+  margin: 0;
+  padding: 0 5px;
+}
+.bullet-point {
+  display: flex;
+  align-items: flex-start;
+}
+.bullet-point i {
+  margin: 5px 5px 0 0;
+}
 .footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   color: white;
   font-weight: lighter;
   background-color: #2e2e2e;
-  padding: 20px 20px 40px;
-  margin: 0;
+  padding: 50px;
+  margin: 100px 0 0;
+  border: 1px solid blue;
+  position: absolute;
+  opacity: .8;
+}
+.footer-container h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-container .social-icons-container {
+  border: 1px solid blue;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.footer-container .social-icons-container .social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px;
+  cursor: pointer;
+}
+.footer-container .social-icons-container .social-icon:hover {
+  box-shadow: 5px 5px 15px black;
+}
+.footer-container .social-icons-container .github-icon {
+  width: 45px;
+  height: 45px;
 }

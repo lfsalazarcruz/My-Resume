@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,7 +13,7 @@
 <body>
 	<div class="row background-container">
 		<img src="img/background/Mojave.jpg" class="background-img"/>
-	</div><!--Background image container-->
+	</div>
 
 	<div class="top-container container-fluid sticky-top row">
 		<div class= "nav-container">
@@ -24,8 +25,8 @@
 	</div><!--Navbar container-->
 	
 	<div class="transparent-container row">
+			<h1>welcome</h1>
 	</div>
-
 
 	<div class="row main-container container-fluid main-container">
 		<div class="col-4 left-container">
@@ -34,11 +35,17 @@
 					<img src="img/Screen Shot 2018-09-29 at 2.41.46 PM.png" class="my-image" alt="Responsive image" />
 				</div>
 				<div class="aboutme-container custom-container">
-					<h1>About Myself</h1>
+					<div class="about-info">
+						<i class="fas fa-user"></i>
+						<h1>About Myself</h1>
+					</div>
 					<p><b>Experienced Engineer with a demonstrated history of working with GIS Technologies. Skilled in ArcMAP, QGIS and AutoCAD. Currently enrolled in a Full Stack Web Development program, pursuing a career in Software Development.</b></p>
 				</div>
 				<div class="skills-container custom-container">
-					<h1>Skills</h1>
+					<div class="about-info">
+						<i class="fas fa-toolbox"></i>
+						<h1>Skills</h1>
+					</div>
 					<p><b>#HTML #CSS #JavaScript #React #Node.js #Express #SQL #LESS #Bootstrap
 							#QGIS #ArcGIS_10+ #GoogleEarth #GlobbalMapper #AutoCAD #HEC-HMS #HEC-RAS</b></p>
 				</div>
@@ -47,7 +54,10 @@
 					<a href="https://stoic-dijkstra-f155b3.netlify.com/"><h5>React Notes</h5></a>
 				</div> -->
 				<div class="custom-container">
-					<h1>Languages</h1>
+					<div class="about-info">
+						<i class="fas fa-globe-americas"></i>
+						<h1>Languages</h1>
+					</div>
 					<div class="row languages-container">
 						<div class="language-container col-4">
 							<img src="img/us_icon.png" class="flag-icon"/>
@@ -57,12 +67,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="contact-container custom-container">
-					<h1>Contact Me</h1>
-					<p><b>+1(619)882-9399</b></p>
-					<p><b>salazarcruz.fernando@gmail.com</b></p>
-				</div>
-				<div class="row social-icons-container custom-container">
+				<!-- <div class="contact-container custom-container">
+					<div class="about-info">
+						<i class="fas fa-mobile-alt"></i>
+						<h1>Contact Me</h1>
+					</div>
+					<i class="fas fa-phone"></i><span><b> +1(619)882-9399</b></span><br>
+					<i class="far fa-paper-plane"></i><span><b> salazarcruz.fernando@gmail.com</b></span>
+				</div> -->
+				<!-- <div class="row social-icons-container custom-container">
 					<div class="col-2">
 						<a href="https://github.com/lfsalazarcruz" target="_blank"><img src="img/socialicons/github.png" class="social-icon github-icon"/></a>
 					</div>
@@ -78,6 +91,20 @@
 					<div class="col-2">
 						<a href="https://www.facebook.com/fernando.bernabeu.33" target="_blank"><img src="img/socialicons/facebook.png" class="social-icon"/></a>
 					</div>
+				</div> -->
+				<div class="custom-container">
+					<div class="about-info">
+						<i class="fas fa-user-graduate custom-icon"></i>
+						<h1>Education</h1>
+					</div>
+					<div>
+						<h5><b>Lambda School</b></h5>
+						<p>Full Stack Web Development and Computer Science Program</p>
+					</div>
+					<div>
+						<h5><b>Technological Institute of Mexico</b></h5>
+						<p>Bachelor of Science in Civil Engineering</p>
+					</div>
 				</div>
 			</div> <!--Trying to justify space between these divs-->
 		</div> <!-- this is the end of the left container -->
@@ -88,15 +115,33 @@
 				<h4>Full Stack Web Developer</h4>
 			</div>
 			<div class="custom-container"> 
-				<h1>Experience</h1>
+				<div class="about-info">
+					<i class="fas fa-briefcase"></i>
+					<h1>Experience</h1>
+				</div>
 				<div class="experience-container">
 					<h4>CHC Consulting</h4>
-					<h5>Engineer - Telecommunications</h5>
+					<div class="job-info"> 
+						<h5>Engineer - Telecommunications</h5>
+						<h5>Oct 2017 – Jun 2018</h5>
+					</div>
 					<ul>
-						<li>Utilized various specific GIS softwares to produce a cost effective engineered design for construction to place, splice, install and maintain for many years to come.</li>
-						<li>Identified assigned fiber/copper pairs at a strategic access points and design an aerial and/or underground path from point A to point B.</li>
-						<li>Acquired deep understanding of fiber optic networking, routing, and network management.</li>
-						<li>Managed and enforced engineering quality and compliance with the Fiber Outside Plant Design specifications.</li>
+						<div class="bullet-point">
+							<i class="far fa-caret-square-right"></i>
+							<li>Utilized various specific GIS softwares to produce a cost effective engineered design for construction to place, splice, install and maintain for many years to come.</li>
+						</div>
+						<div class="bullet-point">
+							<i class="far fa-caret-square-right"></i>
+							<li>Identified assigned fiber/copper pairs at a strategic access points and design an aerial and/or underground path from point A to point B.</li>
+						</div>
+						<div class="bullet-point">
+							<i class="far fa-caret-square-right"></i>
+							<li>Acquired deep understanding of fiber optic networking, routing, and network management.</li>
+						</div>
+						<div class="bullet-point">
+							<i class="far fa-caret-square-right"></i>
+							<li>Managed and enforced engineering quality and compliance with the Fiber Outside Plant Design specifications.</li>
+						</div>
 					</ul>
 				</div>
 				<!-- <div class="experience-container">
@@ -110,24 +155,57 @@
 				</div> -->
 				<div class="experience-container">
 						<h4>Libra Civil Engineers</h4>
-						<h5>Project Coordinator - Engineering Design</h5>
+						<div class="job-info"> 
+							<h5>Project Coordinator - Engineering Design</h5>
+							<h5>May 2016 – May 2017</h5>
+						</div>
 						<ul>
-							<li>Project Coordinator for the design of a 250 l/sec Desalination Plant located in San Quintín, Mexico.</li>
-							<li>Coordination of engineering design for deliverables on schedule (plans, documents & reports).</li>
-							<li>Interpreted and analyzed engineering documents in order to report any issue that arises to every participant.</li>
-							<li>Monitoring and tracking project’s progress and handling any issue that arises during the engineering design.</li>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Project Coordinator for the design of a 250 l/sec Desalination Plant located in San Quintín, Mexico.</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Coordination of engineering design for deliverables on schedule (plans, documents & reports).</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Interpreted and analyzed engineering documents in order to report any issue that arises to every participant.</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Monitoring and tracking project’s progress and handling any issue that arises during the engineering design.</li>
+							</div>
 						</ul>
-						<h5>GIS Analyst - Urban Development</h5>
+						<div class="job-info"> 
+							<h5>GIS Analyst - Urban Development</h5>
+							<h5>Jan 2015 – May 2016</h5>
+						</div>
 						<ul>
-							<li>Analyzed a variety of geospatial data for multi-disciplinary projects focusing on Urban Development.</li>
-							<li>Creation of high quality maps, data capture, graphics, and data management.</li>
-							<li>GIS modeling, map production, geospatial data management & processing.</li>
-							<li>Experience working with large Data Sets (Querying, Filtering, Analyzing geospatial data).</li>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Analyzed a variety of geospatial data for multi-disciplinary projects focusing on Urban Development.</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Creation of high quality maps, data capture, graphics, and data management.</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>GIS modeling, map production, geospatial data management & processing.</li>
+							</div>
+							<div class="bullet-point">
+								<i class="far fa-caret-square-right"></i>
+								<li>Experience working with large Data Sets (Querying, Filtering, Analyzing geospatial data).</li>
+							</div>
 						</ul>
-					</div>
+				</div>
 			</div>
-			<div class="custom-container">
-				<h1>Education</h1>
+			<!-- <div class="custom-container">
+				<div class="about-info">
+					<i class="fas fa-user-graduate custom-icon"></i>
+					<h1>Education</h1>
+				</div>
 				<div>
 					<h4>Lambda School</h4>
 					<p>Full Stack Web Development and Computer Science Program</p>
@@ -136,12 +214,36 @@
 					<h4>Technological Institute of Mexico</h4>
 					<p>Bachelor of Science in Civil Engineering</p>
 				</div>
-			</div>
+			</div> -->
 		</div><!-- this is the end of the right container -->
 	</div>
 
 	<div class="footer-container row">
-		<div>This is my footer</div>
+		<div class="contact-container">
+			<div class="about-info">
+				<i class="fas fa-mobile-alt"></i>
+				<h1>contact me</h1>
+			</div>
+			<i class="fas fa-phone"></i><span><b> +1(619)882-9399</b></span>
+			<i class="far fa-paper-plane"></i><span><b> salazarcruz.fernando@gmail.com</b></span>
+		</div>
+		<div class="row social-icons-container custom-container">
+			<div class="col-2">
+				<a href="https://github.com/lfsalazarcruz" target="_blank"><img src="img/socialicons/github.png" class="social-icon github-icon"/></a>
+			</div>
+			<div class="col-2">
+				<a href="http://linkedin.com/in/lfernandosalazarc" target="_blank"><img src="img/socialicons/linkedin.png" class="social-icon"/></a>
+			</div>
+			<div class="col-2">
+				<a href="https://www.instagram.com/fernando_salazarcruz/" target="_blank"><img src="img/socialicons/instagram.png" class="social-icon"/></a>
+			</div>
+			<div class="col-2">
+				<a href="https://twitter.com/LFernando_Sala" target="_blank"><img src="img/socialicons/twitter.png" class="social-icon"/></a>
+			</div>
+			<div class="col-2">
+				<a href="https://www.facebook.com/fernando.bernabeu.33" target="_blank"><img src="img/socialicons/facebook.png" class="social-icon"/></a>
+			</div>
+		</div>
 	</div><!--Footer-->
     
 
