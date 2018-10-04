@@ -8418,6 +8418,12 @@ h5 {
 .top-container .nav-container .nav-link:hover {
   color: #FFB343;
 }
+.line-effect {
+  position: relative;
+  background-color: #FFB343;
+  color: #FFB343;
+  font-size: 2px;
+}
 .transparent-container {
   height: 100vh;
   width: 100%;
@@ -8571,7 +8577,7 @@ h5 {
   width: 45px;
   height: 45px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .top-container .nav-container .nav-main-container {
     display: flex;
     justify-content: space-around;
@@ -8607,6 +8613,7 @@ h5 {
   .footer-container .contact-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
   .footer-container .contact-container .contact-info {
     display: flex;
