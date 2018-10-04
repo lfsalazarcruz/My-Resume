@@ -73,7 +73,7 @@ h5 {
 .main-container {
     max-width: 1024px;
     margin: 0;
-    padding: 0;
+    padding: 20px auto;
     color: white;
     font-weight: lighter;
 	font-size: 14px;
@@ -89,12 +89,6 @@ h5 {
 		.left-flex-container {
 			display: flex;
 			flex-direction: column;
-			// justify-content: space-between;
-
-			.custom-container {
-				// border: 1px solid blue;
-				margin-bottom: 12px;
-			}
 		}
 
         .image-container {
@@ -109,10 +103,14 @@ h5 {
                 height: 200px;
             }
 		}
+
+		.name-container {
+			display: none;
+		}
 		
 		.language-container {
 			width: 50%;
-			padding: 10px 20px;
+			padding: 20px 15px;
 
 			.flag-icon {
 				border-radius: 500px;
@@ -126,9 +124,9 @@ h5 {
 		}
 
 		.education-container {
-			
-			.about-info {
-				margin-bottom: 20px;
+
+			.education-inner-container {
+				margin: 20px auto;
 			}
 		}
     }
@@ -242,6 +240,78 @@ h5 {
 		.github-icon {
 			width: 45px;
 			height: 45px;
+		}
+	}
+}
+
+//======================= MOBILE VIEW ============================
+@media (max-width: 400px){
+	.top-container {
+	
+		.nav-container {
+	
+			.nav-main-container {
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+	}
+
+	.transparent-container {
+		margin: 0;
+		display: flex;
+
+		h1 {
+			width: 100%;
+			padding: 0 10px;
+			font-size: 90px;
+		}
+	}
+
+	.main-container {
+
+		.left-container {
+			.name-container {
+				display: block;
+				display: flex;
+				flex-wrap: wrap;
+
+				h1 {
+					font-size: 50px;
+				}
+			}
+		}
+
+		.right-container {
+			padding: 20px 15px;
+	
+			.name-container {
+				display: none;
+			}
+		}
+	}
+
+	.footer-container {
+	
+		.footer-main-container {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	
+		.contact-container {
+			display: flex;
+			flex-wrap: wrap;
+	
+			.contact-info {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+		}
+		.social-icons-container {
+			margin: 0 auto;
 		}
 	}
 }
